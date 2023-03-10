@@ -29,9 +29,6 @@ pipeline {
                     }
                 }
                 stage('Integration test') {
-                    agent {
-                        label 'my-agent-label'
-                    }
                     steps {
                         echo 'Running the integration test..'
                     }
